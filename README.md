@@ -1,56 +1,55 @@
-# Advanced Control Oriented modeling of Lithium-ion Battery Models using Machine Learning
+# Advanced Control-Oriented Modeling of Lithium-Ion Battery Systems Using Machine Learning
 
-This repository contains machine learning-based dynamic modeling techniques for lithium-ion batteries, developed as part of an independent research initiative aligned with the proposed endeavor of advancing battery control and diagnostics systems for electric vehicles (EVs) and energy storage systems (ESS). The models here integrate physical insight (e.g., Thevenin equivalent circuits) with data-driven architectures such as NARX, LSTM, Koopman operators, and graph neural networks.
+This repository presents a suite of machine learning-based modeling techniques for predicting terminal voltage in lithium-ion batteries. These models are developed as part of an independent research initiative aligned with the goal of improving Battery Management Systems (BMS) for electric vehicles (EVs) and renewable energy storage systems (ESS).
 
-These efforts support the U.S. national goals in electrification, grid modernization, and energy resilience through the development of safer, more reliable, and more efficient Battery Management Systems (BMS).
-
----
-
-## 📌 Key Contributions
-
-- 🔁 NARX + Thevenin hybrid models for nonlinear system identification  
-- 🔄 Closed-loop voltage forecasting using LSTM and NARX  
-- 🔬 Deep Koopman operator models for latent dynamical structure  
-- 🌐 Graph Neural Networks for battery pack-level voltage prediction  
-- 📖 Emphasis on reproducibility, transparency, and public access  
+By combining physical modeling techniques such as Thevenin equivalent circuits with data-driven architectures like NARX recurrent networks, Deep Koopman operators, and Graph Neural Networks (GNN), this work supports scalable, accurate, and efficient battery modeling across various operational conditions.
 
 ---
 
-## 📂 Repository Structure
+## Overview
+
+This repository contributes to the proposed endeavor of developing control and modeling algorithms that improve the safety, efficiency, and reliability of advanced battery systems. The models and tools developed herein are intended for public dissemination and reproducible research.
+
+They support key national objectives in energy resilience, clean transportation, and smart grid technologies.
+
+---
+
+## Key Contributions
+
+### Ongoing Work
+
+- Development and validation of a hybrid model combining Thevenin equivalent circuits with NARX neural networks for dynamic voltage prediction
+- Benchmarking of LSTM-NARX and Deep Koopman operator models for transient and steady-state voltage behavior
+- Closed-loop forecasting and model evaluation using normalized RMSE and MAE metrics on Stanford/NASA datasets
+- Preparation of peer-reviewed publication submitted to *Batteries (MDPI)*
+
+### Planned Contributions
+
+- Incorporation of temperature and aging effects into voltage prediction using the Stanford cycler dataset
+- Application of transfer learning techniques across lithium-ion chemistries (LFP, NCM, LCO) to improve model generalizability
+- Design of reinforcement learning-based control strategies for health-aware charging
+- Integration of physics-informed constraints into ML training for safe, real-time battery operation
+- Modeling of recycled/second-life batteries with power derating estimation for extended lifecycle applications
+- Modularization of model training pipelines into structured Python scripts under `/src/`
+
+---
+
+## Repository Structure
 
 | Folder        | Description |
 |---------------|-------------|
-| `notebooks/`  | Jupyter notebooks demonstrating all ML models |
-| `data/`       | Dataset links and format expectations |
-| `src/`        | Source code for modular components (planned) |
-| `results/`    | Prediction results, plots, and metrics |
-| `docs/`       | Research goals, NIW statement, and methods |
-| `configs/`    | Configuration templates for experiments |
-| `experiments/`| Planned experiment logs or JSON trackers |
-| `tests/`      | Placeholder for validation/unit tests |
+| `notebooks/`  | Jupyter notebooks for each model with demo runs |
+| `data/`       | Dataset source links and preprocessing details |
+| `src/`        | Modular source code for future refactoring (in progress) |
+| `results/`    | Evaluation plots, predicted vs actual outputs |
+| `docs/`       | Research summary, NIW statement, and technical notes |
+| `configs/`    | Training configurations for reproducibility |
+| `tests/`      | Planned unit testing and reproducibility checks |
 
 ---
 
-## 🧠 Research Context
+## Reproducibility
 
-This repository supports the author’s proposed endeavor and future plan to:
-- Improve BMS modeling accuracy using ML and hybrid approaches
-- Combine physics-based modeling (Thevenin) with learning-based estimators (NARX)
-- Build reusable models for EVs and grid-based battery systems
-- Support sustainable deployment through open science
-
----
-
-## 🌐 Open Science and Reuse
-
-This repository is open-source under the MIT License and encourages reuse by the academic and engineering communities. If this work is helpful in your research, please cite the repo using the citation metadata or link to the associated paper (pending review).
-
-📄 **Citation**: See [CITATION.cff](./CITATION.cff)  
-📘 **License**: [MIT License](./LICENSE)
-
----
-
-## 📊 Getting Started
-
+Install required libraries:
 ```bash
 pip install -r requirements.txt
