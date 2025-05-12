@@ -1,4 +1,4 @@
-# ML_Battery_Models
+# Advanced Control Oriented modeling of Lithium-ion Battery Models using Machine Learning
 
 This repository contains machine learning-based dynamic modeling techniques for lithium-ion batteries, developed as part of an independent research initiative aligned with the proposed endeavor of advancing battery control and diagnostics systems for electric vehicles (EVs) and energy storage systems (ESS). The models here integrate physical insight (e.g., Thevenin equivalent circuits) with data-driven architectures such as NARX, LSTM, Koopman operators, and graph neural networks.
 
