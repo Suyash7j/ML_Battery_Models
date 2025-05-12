@@ -2,7 +2,8 @@
 
 This repository presents a suite of machine learning-based modeling techniques for predicting terminal voltage in lithium-ion batteries. These models are developed as part of an independent research initiative aligned with the goal of improving Battery Management Systems (BMS) for electric vehicles (EVs) and renewable energy storage systems (ESS).
 
-By combining physical modeling techniques such as Thevenin equivalent circuits with data-driven architectures like NARX recurrent networks, Deep Koopman operators, and Graph Neural Networks (GNN), this work supports scalable, accurate, and efficient battery modeling across various operational conditions.
+If you're interested in **collaborating on future research projects**, including experimental validation, hybrid modeling, or AI-based battery control, please feel free to reach out.  
+**Contact:** Suyash Jadhav | **Email:** suyash7.j@gmail.com | **GitHub:** [github.com/Suyash7j](https://github.com/Suyash7j)
 
 ---
 
